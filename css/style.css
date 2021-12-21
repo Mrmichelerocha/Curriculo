@@ -26,6 +26,7 @@ a.logo{
   margin: 5px 22px 5px 0px;
 }
 #menu-horizontal {
+  list-style: none;
   display: inline;
 }
 #menu-horizontal ul {
@@ -33,12 +34,12 @@ a.logo{
   float: right;
 }
 #menu-horizontal ul li{
-  display: inline;
+  display: inline-block;
   background: #FA4224;
   padding: 5px 30px 5px 30px;
   margin-right: 3px;
   border-radius: 20px;
-  line-height: 53px;
+  margin-top: 9px;
   font-size: 21px;
 }
 #menu-horizontal ul li a{
@@ -50,9 +51,33 @@ a.logo{
   padding: 5px 20px 5px 30px;
   transition: .5s;
 }
-a.logo a.active, a:hover{
+a.logo a.active, a:hover {
   color: #FCC006;
   background: #FA4224;
   padding: 5px 20px 5px 40px;
   transition: .5s;
+}
+button{
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+}
+button:hover {
+  cursor: pointer;
+  opacity: .8;
+  background-color: rgba(255, 255, 255, 0.2);
+
+}
+@media (max-width: 900px) {
+  #menu-horizontal ul li {
+    display: none;
+  }
+  button {
+    display: block;
+  }
 }
