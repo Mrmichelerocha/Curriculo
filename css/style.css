@@ -1,34 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 *{
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Comic Neue', cursive;
+}
+header{
+  height: 50px;
+  width: 100%;
+  background: #FCC006;
 }
 
-li, a {
-  /* fonts */
+a.logo{
+  background: #FA4224;
+  padding: 5px 22px 5px 154px;
+  margin-left: 9px;
+  border-radius: 20px;
+  line-height: 53px;
+  color: black;
+  font-size: 21px;
 }
-
-#menu-horizontal ul{
-  list-style-type: none;
-  padding: 0;
-  background-color: rgba(255, 0, 0, 0.5);
+.logoarena{
+  position: absolute;
+  margin: 5px 22px 5px 0px;
 }
-
+#menu-horizontal {
+  display: inline;
+}
+#menu-horizontal ul {
+  margin-right: 15px;
+  float: right;
+}
 #menu-horizontal ul li{
   display: inline;
-
+  background: #FA4224;
+  padding: 5px 30px 5px 30px;
+  margin-right: 3px;
+  border-radius: 20px;
+  line-height: 53px;
+  font-size: 21px;
 }
-
 #menu-horizontal ul li a{
-  color: white;
-  padding: 10px;
-  display: inline-block;
-  text-decoration: none;
-
-}
-
-
-#menu-horizontal li a:hover{
   color: black;
-  /* background-color: rgb(255, 0, 0);  */
+}
+#menu-horizontal ul li a:hover {
+  color: #FCC006;
+  background: #FA4224;
+  padding: 5px 20px 5px 30px;
+  transition: .5s;
+}
+a.logo a.active, a:hover{
+  color: #FCC006;
+  background: #FA4224;
+  padding: 5px 20px 5px 40px;
+  transition: .5s;
 }
