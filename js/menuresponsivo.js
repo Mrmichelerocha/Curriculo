@@ -1,8 +1,8 @@
-const buttonResponsive = document.getElementsByClassName('button');
+const buttonResponsive = document.getElementById('button');
 
 function toggleMenu() {
-  const menuHorizontal = document.getElementsByClassName('menu-horizontal');
-  menuHorizontal.classList.toggle('active');
+  const nav = document.getElementById('menu-horizontal');
+  nav.classList.toggle('active');
 
 }
-buttonResponsive.addEventListterner('click', toggleMenu);
+buttonResponsive.addEventListerner('click', toggleMenu);
